@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game - B</title>
+  <link rel="stylesheet" href="B.css">
+</head>
+<body>
+
+  <div id="game-play1">
+    <button id="single-option" onclick="startAdventure()">START ADVENTURE</button>
+  </div>
+
+  <div id="game-play2" style="display: none">
+    <button id="a-option-1" onclick="pathChoice('a-option-1')">Trecherous Asteroid Route</button>
+    <button id="a-option-2" onclick="pathChoice('a-option-2')">Long Mysterious Path</button>
+  </div>
+
+  <div id="game-play3" style="display: none">
+    <button id="b-option-1" onclick="attackChoice('b-option-1')">Hide in Clouds</button>
+    <button id="b-option-2" onclick="attackChoice('b-option-2')">Attack Enemies</button>
+  </div>
+
+  <div id="game-play4" style="display: none">
+    <button id="c-option-1" onclick="codeChoice('c-option-1')">5CD245</button>
+    <button id="c-option-2" onclick="codeChoice('c-option-2')">FCD201</button>
+    <button id="c-option-3" onclick="codeChoice('c-option-3')">HSG271</button>
+  </div>
+
+  <div id="game-play5" style="display: none">
+    <button id="again-option" onclick="startAgain()">START AGAIN</button>
+  </div>
+
+  <div id="timer-container"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="B.js"></script>
+
+</body>
+</html>
