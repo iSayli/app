@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const socket = io();
+  const socket = io.connect('https://app-2g0n.onrender.com');
   
     const singleOptionButton = document.getElementById('single-option');
     const againOptionButton = document.getElementById('again-option');

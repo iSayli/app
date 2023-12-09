@@ -1,9 +1,10 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const videoContainer = document.getElementById('video-container');
     const gameVideo = document.getElementById('game-video');
     const smallTextElement = document.getElementById('a-small-text');
 
-    const socket = io();
+    const socket = io.connect('https://app-2g0n.onrender.com');
 
     socket.on('updateState', (gameState) => {
     if (gameState.scene === 2) {
