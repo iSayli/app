@@ -176,5 +176,5 @@ io.on('connection', (socket) => {
 
 const port = process.env.PORT || 3000;
 server.listen(port, () => {
-  console.log(`Server is running on https://app-2g0n.onrender.com`);
+  console.log(`Server is running on https://app-production-6364.up.railway.app/`);
 });

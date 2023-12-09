@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameVideo = document.getElementById('game-video');
     const smallTextElement = document.getElementById('a-small-text');
 
-    const socket = io.connect('https://app-2g0n.onrender.com');
+    const socket = io.connect('https://app-production-6364.up.railway.app/');
 
     socket.on('updateState', (gameState) => {
     if (gameState.scene === 2) {
