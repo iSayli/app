@@ -12,18 +12,22 @@ const io = socketIO(server);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'server.html'));
   });
   
-// Serve A.html when accessing /A
-app.get('/A', (req, res) => {
-res.sendFile(path.join(__dirname, 'public', 'A.html'));
-});
+  // Serve A.html when accessing /A
+  app.get('/A', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'A.html'));
+  });
   
-app.get('/B', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'B.html'));
-});
+  // Serve B.html when accessing /B
+  app.get('/B', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'B.html'));
+  });
+  
+  // ...
 
 let gameState = {
   scene: 1,
