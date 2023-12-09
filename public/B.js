@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   const socket = io.connect('https://app-production-6364.up.railway.app/');
   

@@ -1,3 +1,4 @@
+
 const express = require('express');
 const http = require('http');
 const socketIO = require('socket.io');
@@ -12,9 +13,14 @@ const io = socketIO(server);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'A.html'));
+    res.sendFile(path.join(__dirname, 'public', 'server.html'));
+  });
+  
+// Serve A.html when accessing /A
+app.get('/A', (req, res) => {
+res.sendFile(path.join(__dirname, 'public', 'A.html'));
 });
-
+  
 app.get('/B', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'B.html'));
 });
