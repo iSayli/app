@@ -38,7 +38,6 @@ let gameState = {
 function startScene2() {
   gameState.scene = 2;
   io.emit('updateState', gameState);
-
 }
 
 function startScene25() {
@@ -50,7 +49,6 @@ function startScene25() {
 function startScene3() {
   gameState.scene = 3;
   io.emit('updateState', gameState);
-
 }
 
 function startScene35() {
